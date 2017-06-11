@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>user</title>
+
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/signin.css" rel="stylesheet">
+    <!--<script src="static/js/jquery-3.2.1.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>-->
+    <script src="static/js/angular.min.js"></script>
+</head>
+<body>
+    <div>
+        <table class="table table-striped" ng-controller="userCtrl">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            <tr ng-repeat="u in users">
+                <td>{{ u.id }}</td>
+                <td>{{ u.name }}</td>
+                <td>{{ u.email }}</td>
+            </tr>
+        </table>
+    </div>
+
+<script src="static/js/userController.js">
+</script>
+</body>
+</html>
